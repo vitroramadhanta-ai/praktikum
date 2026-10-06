@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Web - Vitro Ramadhanta Mawardi</title>
+ 
+  <!-- HTML Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+ 
+  <!-- HTML CSS (link ke file eksternal) -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome untuk ikon sosial media profesional -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+  <main class="container">
+ 
+    <!-- HTML Picture -->
+    <div class="photo-wrapper">
+      <!-- Menggunakan foto yang Anda lampirkan -->
+      <img src="foto.jpg" alt="Profile Picture" class="foto-profil">
+    </div>
+ 
+    <!-- HTML Heading -->
+    <h2 class="nama">Vitro Ramadhanta Mawardi</h2>
+    <h3 class="detail">102042500132 | Fakultas Rekayasa Industri | S1 Sistem Informasi</h3>
+ 
+    <!-- Tombol Sosial Media Langsung -->
+    <div class="sosmed">
+      <a href="https://github.com/vitroramadhanta-ai" target="_blank" class="ikon github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://instagram.com/vitroramadhantaa" target="_blank" class="ikon instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com/in/Vitro Ramadhanta" target="_blank" class="ikon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://wa.me/+628119472004" target="_blank" class="ikon whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+ 
+    <h4>Biodata Singkat</h4>
+ 
+    <!-- HTML Table -->
+    <table class="tabel-biodata">
+      <tr>
+        <th>Nama</th>
+        <td>Vitro</td>
+      </tr>
+      <tr>
+        <th>NIM</th>
+        <td>102042500132</td>
+      </tr>
+      <tr>
+        <th>Fakultas</th>
+        <td>Fakultas Rekayasa Industri</td>
+      </tr>
+      <tr>
+        <th>Program Studi</th>
+        <td>S1 Sistem Informasi</td>
+      </tr>
+    </table>
+ 
+    <!-- HTML Date and Time -->
+    <p class="waktu-akses">
+      Halaman ini dibuat pada: <time datetime="2026-09-26">26 September 2026</time><br>
+      <span id="jam-sekarang"></span>
+    </p>
+ 
+    <h6 class="footer-text">&copy; 2026 - Personal Web Vitro</h6>
+ 
+  </main>
+ 
+  <script>
+    // HTML Date and Time (real-time jam)
+    function tampilkanJam() {
+      const sekarang = new Date();
+      document.getElementById("jam-sekarang").textContent =
+        "Waktu saat ini: " + sekarang.toLocaleString("id-ID");
+    }
+    tampilkanJam();
+    setInterval(tampilkanJam, 1000);
+  </script>
+ 
+</body>
+</html>
